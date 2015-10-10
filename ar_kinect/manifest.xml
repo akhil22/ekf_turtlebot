@@ -1,0 +1,22 @@
+<package>
+  <description brief="Improved AR-markers using a Kinect">
+    This package extends the ar_pose package to handle point clouds + images generated from the kinect for improved AR marker localization.
+  </description>
+  <author>Michael Ferguson</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/ar_kinect</url>
+
+  <rosdep name="glut"/>
+  <depend package="visualization_msgs"/>
+  <depend package="artoolkit"/>
+  <depend package="ar_pose"/>
+  <depend package="geometry_msgs"/>
+  <depend package="tf"/>
+  <depend package="pcl_ros"/>
+  <depend package="opencv2"/>
+  <depend package="cv_bridge"/>
+  <depend package="roscpp"/>
+</package>
+
+

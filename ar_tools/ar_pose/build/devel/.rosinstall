@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/akhil/rosbuild_ws/ar_tools/ar_pose/build/devel/setup.sh

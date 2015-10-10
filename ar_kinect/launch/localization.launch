@@ -1,0 +1,18 @@
+<launch>
+
+<!--<arg name="port1" default="/dev/ttyUSB0"/>
+<node pkg="p2os_driver" name="p2os" type="p2os" args="$(arg port1)" output="screen" /> -->
+
+<!--<arg name="port2" default="/dev/ttyUSB1" />
+<arg name="baud" default="38400" />
+<arg name="resolution" default="1.0" />
+<node pkg="sicktoolbox_wrapper" name="sicklms" type="sicklms" args="$(arg port2) $(arg baud) $(arg resolution)" output="screen" /> -->
+
+<include file="$(find turtlebot_bringup)/launch/3dsensor_alone.launch" />
+<node pkg="wheel_chair" name="tf_broadcaster2" type="tf_broadcaster2" />
+
+<arg name="map_file" default="/home/akhil/map5.yaml" />
+<node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)" />
+
+<include file="$(find ar_kinect)/launch/ar_kinect.launch"/>
+</launch>

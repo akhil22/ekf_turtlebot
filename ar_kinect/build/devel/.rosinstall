@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/akhil/rosbuild_ws/ar_kinect/build/devel/setup.sh
